@@ -1,0 +1,1043 @@
+{
+ "updated": "2026-11-11T03:22:31.000Z",
+ "calibration": {
+  "public": [
+   {
+    "lo": 0,
+    "hi": 10,
+    "n": 5,
+    "yes": 0,
+    "mean": 0.05
+   },
+   {
+    "lo": 10,
+    "hi": 20,
+    "n": 4,
+    "yes": 0,
+    "mean": 0.1375
+   },
+   {
+    "lo": 20,
+    "hi": 30,
+    "n": 5,
+    "yes": 0,
+    "mean": 0.2
+   },
+   {
+    "lo": 30,
+    "hi": 40,
+    "n": 1,
+    "yes": 1,
+    "mean": 0.35
+   },
+   {
+    "lo": 40,
+    "hi": 50,
+    "n": 2,
+    "yes": 1,
+    "mean": 0.4
+   },
+   {
+    "lo": 50,
+    "hi": 60,
+    "n": 5,
+    "yes": 3,
+    "mean": 0.52
+   },
+   {
+    "lo": 60,
+    "hi": 70,
+    "n": 6,
+    "yes": 2,
+    "mean": 0.6217
+   },
+   {
+    "lo": 70,
+    "hi": 80,
+    "n": 5,
+    "yes": 5,
+    "mean": 0.714
+   },
+   {
+    "lo": 80,
+    "hi": 90,
+    "n": 3,
+    "yes": 3,
+    "mean": 0.8167
+   },
+   {
+    "lo": 90,
+    "hi": 100,
+    "n": 14,
+    "yes": 13,
+    "mean": 0.9214
+   }
+  ],
+  "all": [
+   {
+    "lo": 0,
+    "hi": 10,
+    "n": 39,
+    "yes": 1,
+    "mean": 0.0374
+   },
+   {
+    "lo": 10,
+    "hi": 20,
+    "n": 16,
+    "yes": 1,
+    "mean": 0.1337
+   },
+   {
+    "lo": 20,
+    "hi": 30,
+    "n": 10,
+    "yes": 1,
+    "mean": 0.205
+   },
+   {
+    "lo": 30,
+    "hi": 40,
+    "n": 12,
+    "yes": 6,
+    "mean": 0.325
+   },
+   {
+    "lo": 40,
+    "hi": 50,
+    "n": 13,
+    "yes": 7,
+    "mean": 0.4138
+   },
+   {
+    "lo": 50,
+    "hi": 60,
+    "n": 11,
+    "yes": 4,
+    "mean": 0.5182
+   },
+   {
+    "lo": 60,
+    "hi": 70,
+    "n": 16,
+    "yes": 7,
+    "mean": 0.625
+   },
+   {
+    "lo": 70,
+    "hi": 80,
+    "n": 16,
+    "yes": 12,
+    "mean": 0.7206
+   },
+   {
+    "lo": 80,
+    "hi": 90,
+    "n": 13,
+    "yes": 9,
+    "mean": 0.825
+   },
+   {
+    "lo": 90,
+    "hi": 100,
+    "n": 24,
+    "yes": 20,
+    "mean": 0.9242
+   }
+  ]
+ },
+ "questions": [
+  {
+   "id": "cmhqvlg6k00009s20pk8xyufg",
+   "title": "In November of 2027, if we do an informal poll in a bar, more than 50% of people will say that they expect AI smarter than any human in the next 10 years.",
+   "url": "https://fatebook.io/q/in-november-of-2027-if-we-do-an-informal-poll-in-a-bar-more--cmhqvlg6k00009s20pk8xyufg",
+   "createdAt": "2025-11-08T22:48:19.244Z",
+   "resolveBy": "2027-11-29T08:00:00.000Z",
+   "resolvedAt": null,
+   "resolution": null,
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.35,
+     "t": "2025-11-08T22:48:19.354Z"
+    },
+    {
+     "p": 0.2,
+     "t": "2025-11-25T19:05:02.146Z"
+    },
+    {
+     "p": 0.7,
+     "t": "2026-04-09T03:25:02.140Z"
+    }
+   ]
+  },
+  {
+   "id": "cmcb5ytng000024jdoptpf965",
+   "title": "I'll see Em IRL, in Berkeley, in the next two months",
+   "url": "https://fatebook.io/q/i-ll-see-em-irl-in-berkeley-in-the-next-two-months--cmcb5ytng000024jdoptpf965",
+   "createdAt": "2025-06-24T23:35:48.893Z",
+   "resolveBy": "2025-08-24T07:00:00.000Z",
+   "resolvedAt": "2025-07-11T03:21:03.681Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.9,
+     "t": "2025-06-24T23:35:48.963Z"
+    },
+    {
+     "p": 0.85,
+     "t": "2025-06-26T00:10:02.957Z"
+    },
+    {
+     "p": 0.7,
+     "t": "2025-06-28T18:01:35.002Z"
+    }
+   ]
+  },
+  {
+   "id": "cm1azi7xa000019599gydc0pr",
+   "title": "More than 10 people will attend the FlexHEG webinar",
+   "url": "https://fatebook.io/q/more-than-10-people-will-attend-the-flexheg-webinar--cm1azi7xa000019599gydc0pr",
+   "createdAt": "2024-09-20T17:18:10.843Z",
+   "resolveBy": "2024-09-20T07:00:00.000Z",
+   "resolvedAt": "2024-09-22T00:39:34.804Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.05,
+     "t": "2024-09-20T17:18:10.885Z"
+    }
+   ]
+  },
+  {
+   "id": "cm1azh1n80000h8i6mufabsaj",
+   "title": "0 people will attend the FlexHEG webinar",
+   "url": "https://fatebook.io/q/0-people-will-attend-the-flexheg-webinar--cm1azh1n80000h8i6mufabsaj",
+   "createdAt": "2024-09-20T17:17:16.049Z",
+   "resolveBy": "2024-09-20T07:00:00.000Z",
+   "resolvedAt": "2024-09-22T00:39:42.678Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.35,
+     "t": "2024-09-20T17:17:16.094Z"
+    }
+   ]
+  },
+  {
+   "id": "cm0ybzg8k00003yrnq6gqygz8",
+   "title": "I'll email Leah by this evening to tell you that I've got the automation working and we don't need to do this at all.",
+   "url": "https://fatebook.io/q/i-ll-email-leah-by-this-evening-to-tell-you-that-i-ve-got-th--cm0ybzg8k00003yrnq6gqygz8",
+   "createdAt": "2024-09-11T20:46:29.826Z",
+   "resolveBy": "2024-09-11T07:00:00.000Z",
+   "resolvedAt": "2024-09-12T07:40:44.321Z",
+   "resolution": "AMBIGUOUS",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.3,
+     "t": "2024-09-11T20:46:29.932Z"
+    }
+   ]
+  },
+  {
+   "id": "cm0pogczr0000o33iday3ilvz",
+   "title": "At least half of the total FlexHEG applications will be submitted in the last 3 days before the deadline?",
+   "url": "https://fatebook.io/q/at-least-half-of-the-total-flexheg-applications-will-be-subm--cm0pogczr0000o33iday3ilvz",
+   "createdAt": "2024-09-05T19:25:38.628Z",
+   "resolveBy": "2024-09-16T07:00:00.000Z",
+   "resolvedAt": null,
+   "resolution": null,
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.65,
+     "t": "2024-09-05T19:25:38.659Z"
+    }
+   ]
+  },
+  {
+   "id": "cm0onxfuq00011sqv48upbztc",
+   "title": "Alibaba's revenue in 2023 was less than 1.5 trillion dollars",
+   "url": "https://fatebook.io/q/alibaba-s-revenue-in-2023-was-less-than-1-5-trillion-dollars--cm0onxfuq00011sqv48upbztc",
+   "createdAt": "2024-09-05T02:23:09.696Z",
+   "resolveBy": "2063-06-13T07:00:00.000Z",
+   "resolvedAt": "2024-09-05T02:38:33.539Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.9,
+     "t": "2024-09-05T02:23:09.728Z"
+    }
+   ]
+  },
+  {
+   "id": "cm0onwq5i00001sqvo0j6li7k",
+   "title": "Alibaba's revenue in 2023 was greater than 5 billion dollars.",
+   "url": "https://fatebook.io/q/alibaba-s-revenue-in-2023-was-greater-than-5-billion-dollars--cm0onwq5i00001sqvo0j6li7k",
+   "createdAt": "2024-09-05T02:22:36.388Z",
+   "resolveBy": "2063-06-13T07:00:00.000Z",
+   "resolvedAt": "2024-09-05T02:38:55.352Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.9,
+     "t": "2024-09-05T02:22:36.420Z"
+    }
+   ]
+  },
+  {
+   "id": "cm0dc989h000113humxbcwx11",
+   "title": "In 1950, less than 40% of the world population was over 65.",
+   "url": "https://fatebook.io/q/in-1950-less-than-40-of-the-world-population-was-over-65--cm0dc989h000113humxbcwx11",
+   "createdAt": "2024-08-28T04:10:56.401Z",
+   "resolveBy": "2024-09-03T07:00:00.000Z",
+   "resolvedAt": "2024-08-28T04:16:48.952Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.9,
+     "t": "2024-08-28T04:10:56.449Z"
+    }
+   ]
+  },
+  {
+   "id": "cm0dc85i5000013huous0ykqd",
+   "title": "In 1950, more than 5% of the world population was over 65",
+   "url": "https://fatebook.io/q/in-1950-more-than-5-of-the-world-population-was-over-65--cm0dc85i5000013huous0ykqd",
+   "createdAt": "2024-08-28T04:10:06.168Z",
+   "resolveBy": "2024-09-03T07:00:00.000Z",
+   "resolvedAt": "2024-08-28T04:17:21.097Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.9,
+     "t": "2024-08-28T04:10:06.223Z"
+    }
+   ]
+  },
+  {
+   "id": "cm0dc7d0v000peznom0ff81ff",
+   "title": "Less than 45% of the world population was over 65 in 2022",
+   "url": "https://fatebook.io/q/less-than-45-of-the-world-population-was-over-65-in-2022--cm0dc7d0v000peznom0ff81ff",
+   "createdAt": "2024-08-28T04:09:29.259Z",
+   "resolveBy": "2024-09-03T07:00:00.000Z",
+   "resolvedAt": "2024-08-28T04:13:38.986Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.9,
+     "t": "2024-08-28T04:11:18.514Z"
+    }
+   ]
+  },
+  {
+   "id": "cm0dc4cc9000oeznow9fbv8tl",
+   "title": "More than 20% of people alive in 2023 were older than 65",
+   "url": "https://fatebook.io/q/more-than-20-of-people-alive-in-2023-were-older-than-65--cm0dc4cc9000oeznow9fbv8tl",
+   "createdAt": "2024-08-28T04:07:08.406Z",
+   "resolveBy": "2063-06-05T07:00:00.000Z",
+   "resolvedAt": "2024-08-28T04:13:30.122Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.9,
+     "t": "2024-08-28T04:07:08.446Z"
+    }
+   ]
+  },
+  {
+   "id": "clvgeq3560001l30cflhdvhbd",
+   "title": "The guy I bought a Supernote from actually shipped it.",
+   "url": "https://fatebook.io/q/the-guy-i-bought-a-supernote-from-actually-shipped-it--clvgeq3560001l30cflhdvhbd",
+   "createdAt": "2024-04-26T08:24:49.000Z",
+   "resolveBy": "2024-04-26T07:00:00.000Z",
+   "resolvedAt": "2024-04-27T06:36:26.041Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.95,
+     "t": "2024-04-26T08:24:49.000Z"
+    }
+   ]
+  },
+  {
+   "id": "clv1hamd70009jl081n5cdlwx",
+   "title": "I'll file my taxes today",
+   "url": "https://fatebook.io/q/i-ll-file-my-taxes-today--clv1hamd70009jl081n5cdlwx",
+   "createdAt": "2024-04-15T21:40:13.625Z",
+   "resolveBy": "2024-04-15T07:00:00.000Z",
+   "resolvedAt": "2024-04-22T06:22:54.107Z",
+   "resolution": "AMBIGUOUS",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.9,
+     "t": "2024-04-15T21:40:13.625Z"
+    }
+   ]
+  },
+  {
+   "id": "clu7a8ma9000ll8089l78hcwg",
+   "title": "Sydney and I will do a GTD day tomorrow.",
+   "url": "https://fatebook.io/q/sydney-and-i-will-do-a-gtd-day-tomorrow--clu7a8ma9000ll8089l78hcwg",
+   "createdAt": "2024-03-25T18:29:37.614Z",
+   "resolveBy": "2024-03-26T07:00:00.000Z",
+   "resolvedAt": "2024-03-28T00:52:55.331Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.5,
+     "t": "2024-03-25T18:29:37.614Z"
+    }
+   ]
+  },
+  {
+   "id": "clu60icte0026l508ruwpelyw",
+   "title": "Is the blue bird dead?",
+   "url": "https://fatebook.io/q/is-the-blue-bird-dead--clu60icte0026l508ruwpelyw",
+   "createdAt": "2024-03-24T21:09:29.567Z",
+   "resolveBy": "2024-03-25T07:00:00.000Z",
+   "resolvedAt": "2024-03-28T00:54:41.466Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.9,
+     "t": "2024-03-24T21:09:29.567Z"
+    }
+   ]
+  },
+  {
+   "id": "clu4u4sji000zjo08xkc6nz60",
+   "title": "Charlie will come back to the workshop tomorrow.",
+   "url": "https://fatebook.io/q/charlie-will-come-back-to-the-workshop-tomorrow--clu4u4sji000zjo08xkc6nz60",
+   "createdAt": "2024-03-24T01:23:12.889Z",
+   "resolveBy": "2024-03-24T07:00:00.000Z",
+   "resolvedAt": "2024-03-24T19:17:31.492Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.2,
+     "t": "2024-03-24T01:23:12.889Z"
+    }
+   ]
+  },
+  {
+   "id": "clu3diwpv0001lh08if4c5e4z",
+   "title": "NVIDA will five 5x in the next two years (getting above 4714.45 a share).",
+   "url": "https://fatebook.io/q/nvida-will-five-5x-in-the-next-two-years-getting-above-4714--clu3diwpv0001lh08if4c5e4z",
+   "createdAt": "2024-03-23T00:50:31.813Z",
+   "resolveBy": "2026-03-22T07:00:00.000Z",
+   "resolvedAt": "2026-09-07T22:33:52.599Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.1,
+     "t": "2024-03-23T00:50:31.813Z"
+    },
+    {
+     "p": 0.3,
+     "t": "2024-06-07T19:21:15.775Z"
+    },
+    {
+     "p": 0.15,
+     "t": "2024-06-07T19:21:25.378Z"
+    },
+    {
+     "p": 0.2,
+     "t": "2024-07-27T17:26:56.737Z"
+    },
+    {
+     "p": 0.15,
+     "t": "2024-08-12T03:06:55.537Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1wpuc30001l508tl1rq00k",
+   "title": "I have understood the logic, but I will make an operational fuckup.",
+   "url": "https://fatebook.io/q/i-have-understood-the-logic-but-i-will-make-an-operational-f--clu1wpuc30001l508tl1rq00k",
+   "createdAt": "2024-03-22T00:12:15.699Z",
+   "resolveBy": "2024-03-22T07:00:00.000Z",
+   "resolvedAt": "2024-03-22T00:26:21.112Z",
+   "resolution": "AMBIGUOUS",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.1,
+     "t": "2024-03-22T00:12:15.699Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1wn6tm0003l108z3qm5ppt",
+   "title": "There will be a surprise in either of the steps that I didn't make a prediction for.",
+   "url": "https://fatebook.io/q/there-will-be-a-surprise-in-either-of-the-steps-that-i-didn--clu1wn6tm0003l108z3qm5ppt",
+   "createdAt": "2024-03-22T00:10:11.914Z",
+   "resolveBy": "2024-03-21T07:00:00.000Z",
+   "resolvedAt": "2024-03-22T05:55:42.184Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.07,
+     "t": "2024-03-22T00:10:11.914Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1wdmt0000bjw08u20bk29m",
+   "title": "Conditional on my controlling the pillars, if I move a pillar into a star, that will destroy both, leaving a gap.",
+   "url": "https://fatebook.io/q/conditional-on-my-controlling-the-pillars-if-i-move-a-pillar--clu1wdmt0000bjw08u20bk29m",
+   "createdAt": "2024-03-22T00:02:46.068Z",
+   "resolveBy": "2024-03-21T07:00:00.000Z",
+   "resolvedAt": "2024-03-22T00:15:25.832Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.6,
+     "t": "2024-03-22T00:02:46.068Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1waf6b0001jw086dgou3u1",
+   "title": "\"Pillar is you\" will make it so that I control all the pillars.",
+   "url": "https://fatebook.io/q/pillar-is-you-will-make-it-so-that-i-control-all-the-pillar--clu1waf6b0001jw086dgou3u1",
+   "createdAt": "2024-03-22T00:00:16.211Z",
+   "resolveBy": "2024-03-22T07:00:00.000Z",
+   "resolvedAt": "2024-03-22T00:15:34.902Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.72,
+     "t": "2024-03-22T00:00:16.211Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1vw0oq0003id08bnytm2mf",
+   "title": "\"Win is pillar\" will make pillars into the win condition.",
+   "url": "https://fatebook.io/q/win-is-pillar-will-make-pillars-into-the-win-condition--clu1vw0oq0003id08bnytm2mf",
+   "createdAt": "2024-03-21T23:49:04.250Z",
+   "resolveBy": "2024-03-28T07:00:00.000Z",
+   "resolvedAt": "2024-03-22T00:25:19.987Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.03,
+     "t": "2024-03-21T23:49:04.250Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1vsahc000hig08eo1m1u6y",
+   "title": "If I push a pillar into a star on this level, that will destroy the pillar.",
+   "url": "https://fatebook.io/q/if-i-push-a-pillar-into-a-star-on-this-level-that-will-destr--clu1vsahc000hig08eo1m1u6y",
+   "createdAt": "2024-03-21T23:46:10.321Z",
+   "resolveBy": "2024-03-21T07:00:00.000Z",
+   "resolvedAt": "2024-03-22T00:24:49.140Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.4,
+     "t": "2024-03-21T23:46:10.321Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1vr41j0001l2081eitmrq5",
+   "title": "When I push a pillar in to a star, on this level, that will destroy the star and the pillar.",
+   "url": "https://fatebook.io/q/when-i-push-a-pillar-in-to-a-star-on-this-level-that-will-de--clu1vr41j0001l2081eitmrq5",
+   "createdAt": "2024-03-21T23:45:15.319Z",
+   "resolveBy": "2024-03-21T07:00:00.000Z",
+   "resolvedAt": "2024-03-22T00:24:29.786Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.04,
+     "t": "2024-03-21T23:45:15.319Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1vok3e0003jx08zxv993o3",
+   "title": "If I try to push a pillar into a star, on this level, the pillar will just be blocked by the star.",
+   "url": "https://fatebook.io/q/if-i-try-to-push-a-pillar-into-a-star-on-this-level-the-pill--clu1vok3e0003jx08zxv993o3",
+   "createdAt": "2024-03-21T23:43:16.154Z",
+   "resolveBy": "2024-03-21T07:00:00.000Z",
+   "resolvedAt": "2024-03-22T00:24:38.185Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.2,
+     "t": "2024-03-21T23:43:16.154Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1kqni8001dl408hmr2gfjt",
+   "title": "I solved the rat puzzle.",
+   "url": "https://fatebook.io/q/i-solved-the-rat-puzzle--clu1kqni8001dl408hmr2gfjt",
+   "createdAt": "2024-03-21T18:36:58.109Z",
+   "resolveBy": "2024-03-22T07:00:00.000Z",
+   "resolvedAt": "2024-03-21T18:37:57.722Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.98,
+     "t": "2024-03-21T18:36:58.109Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1jt325000vl4088kxb78qf",
+   "title": "I'll spend a day doing an intense learning exercise, in April.",
+   "url": "https://fatebook.io/q/i-ll-spend-a-day-doing-an-intense-learning-exercise-in-april--clu1jt325000vl4088kxb78qf",
+   "createdAt": "2024-03-21T18:10:51.966Z",
+   "resolveBy": "2024-03-22T07:00:00.000Z",
+   "resolvedAt": "2024-07-27T16:44:11.697Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.2,
+     "t": "2024-03-21T18:10:51.966Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1jq19j000yl008ihvqlvak",
+   "title": "I'll finish \"How I use Spaced Repetition\" before May.",
+   "url": "https://fatebook.io/q/i-ll-finish-how-i-use-spaced-repetition-before-may--clu1jq19j000yl008ihvqlvak",
+   "createdAt": "2024-03-21T18:08:29.671Z",
+   "resolveBy": "2024-05-01T07:00:00.000Z",
+   "resolvedAt": "2024-06-07T19:21:55.561Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.6,
+     "t": "2024-03-21T18:08:29.671Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1jo3xi000ul008j1y5yvsj",
+   "title": "In April, I'll regret telling Ray that I would help him prep his workshop in the 2 weeks leading up to it, instead of pairing with Jacob.",
+   "url": "https://fatebook.io/q/in-april-i-ll-regret-telling-ray-that-i-would-help-him-prep--clu1jo3xi000ul008j1y5yvsj",
+   "createdAt": "2024-03-21T18:06:59.814Z",
+   "resolveBy": "2024-04-01T07:00:00.000Z",
+   "resolvedAt": "2024-04-11T05:48:04.383Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.68,
+     "t": "2024-03-21T18:06:59.814Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1jkla30004l008hg2v9d6n",
+   "title": "I'll make at least 10 fatebook predictions in April.",
+   "url": "https://fatebook.io/q/i-ll-make-at-least-10-fatebook-predictions-in-april--clu1jkla30004l008hg2v9d6n",
+   "createdAt": "2024-03-21T18:04:15.676Z",
+   "resolveBy": "2024-04-01T07:00:00.000Z",
+   "resolvedAt": "2024-06-07T19:24:32.689Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.8,
+     "t": "2024-03-21T18:04:15.676Z"
+    },
+    {
+     "p": 0.95,
+     "t": "2024-04-11T05:48:26.080Z"
+    },
+    {
+     "p": 0.97,
+     "t": "2024-04-15T21:39:43.722Z"
+    }
+   ]
+  },
+  {
+   "id": "clu1jiu1y000gl008z4ztd3ty",
+   "title": "At the end of this workshop, I'll have at least one new idea for next thing to do of the order of \"run a coordination tech conference\".",
+   "url": "https://fatebook.io/q/at-the-end-of-this-workshop-i-ll-have-at-least-one-new-idea--clu1jiu1y000gl008z4ztd3ty",
+   "createdAt": "2024-03-21T18:02:53.735Z",
+   "resolveBy": "2024-03-25T07:00:00.000Z",
+   "resolvedAt": "2024-03-28T00:55:00.366Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.6,
+     "t": "2024-03-21T18:02:53.735Z"
+    }
+   ]
+  },
+  {
+   "id": "clu0civ840001lf084576qqf6",
+   "title": "Will I qualitatively change my state on this problem in the next 7 minutes?",
+   "url": "https://fatebook.io/q/will-i-qualitatively-change-my-state-on-this-problem-in-the--clu0civ840001lf084576qqf6",
+   "createdAt": "2024-03-20T21:59:11.760Z",
+   "resolveBy": "2024-03-20T07:00:00.000Z",
+   "resolvedAt": "2024-03-21T18:11:20.930Z",
+   "resolution": "AMBIGUOUS",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.02,
+     "t": "2024-03-20T21:59:11.760Z"
+    }
+   ]
+  },
+  {
+   "id": "clu06bsgt000ol308f2hmrexo",
+   "title": "Milk shows up on the wheel by some process other than just selecting milk cards.",
+   "url": "https://fatebook.io/q/milk-shows-up-on-the-wheel-by-some-process-other-than-just-s--clu06bsgt000ol308f2hmrexo",
+   "createdAt": "2024-03-20T19:05:43.901Z",
+   "resolveBy": "2024-03-27T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:42:25.593Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.6,
+     "t": "2024-03-20T19:05:43.901Z"
+    }
+   ]
+  },
+  {
+   "id": "clu066xck0005l008e4m69vpo",
+   "title": "My inventory will reset at the end of this rent period.",
+   "url": "https://fatebook.io/q/my-inventory-will-reset-at-the-end-of-this-rent-period--clu066xck0005l008e4m69vpo",
+   "createdAt": "2024-03-20T19:01:56.948Z",
+   "resolveBy": "2024-03-21T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:42:36.403Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.2,
+     "t": "2024-03-20T19:01:56.948Z"
+    }
+   ]
+  },
+  {
+   "id": "clu064h9r0003l0084ym6ipqr",
+   "title": "Will the Shiny pebble still be in effect after this rent period, if I pick the shiny pebble?",
+   "url": "https://fatebook.io/q/will-the-shiny-pebble-still-be-in-effect-after-this-rent-per--clu064h9r0003l0084ym6ipqr",
+   "createdAt": "2024-03-20T19:00:02.795Z",
+   "resolveBy": "2024-03-20T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:42:46.264Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.7,
+     "t": "2024-03-20T19:00:02.795Z"
+    },
+    {
+     "p": 0.58,
+     "t": "2024-03-20T19:00:53.324Z"
+    }
+   ]
+  },
+  {
+   "id": "clu05auub000al408eyglg30i",
+   "title": "When a Symbol destroys another symbol, the destroyed symbol is removed from my inventory.",
+   "url": "https://fatebook.io/q/when-a-symbol-destroys-another-symbol-the-destroyed-symbol-i--clu05auub000al408eyglg30i",
+   "createdAt": "2024-03-20T18:37:00.707Z",
+   "resolveBy": "2024-03-21T07:00:00.000Z",
+   "resolvedAt": "2024-03-24T22:16:43.852Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.5,
+     "t": "2024-03-20T18:37:00.707Z"
+    },
+    {
+     "p": 0.9,
+     "t": "2024-03-22T02:55:21.576Z"
+    }
+   ]
+  },
+  {
+   "id": "clu052a7j0006l408vuz3yxjg",
+   "title": "Only symbols in my inventory show up on the wheel.",
+   "url": "https://fatebook.io/q/only-symbols-in-my-inventory-show-up-on-the-wheel--clu052a7j0006l408vuz3yxjg",
+   "createdAt": "2024-03-20T18:30:20.719Z",
+   "resolveBy": "2024-03-27T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:43:06.035Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.7,
+     "t": "2024-03-20T18:30:20.719Z"
+    }
+   ]
+  },
+  {
+   "id": "clu04vptp000jl308ut3b8a52",
+   "title": "The number that \"starts with 15\" is actually the number of slots in my inventory.",
+   "url": "https://fatebook.io/q/the-number-that-starts-with-15-is-actually-the-number-of-slo--clu04vptp000jl308ut3b8a52",
+   "createdAt": "2024-03-20T18:25:14.365Z",
+   "resolveBy": "2024-03-21T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:43:21.592Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.75,
+     "t": "2024-03-20T18:25:14.365Z"
+    }
+   ]
+  },
+  {
+   "id": "clu04upuo0001l008wdz8t72p",
+   "title": "The number that \"starts with 15\" actually starts with 20.",
+   "url": "https://fatebook.io/q/the-number-that-starts-with-15-actually-starts-with-20--clu04upuo0001l008wdz8t72p",
+   "createdAt": "2024-03-20T18:24:27.741Z",
+   "resolveBy": "2024-03-21T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:43:26.512Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.7,
+     "t": "2024-03-20T18:24:27.741Z"
+    }
+   ]
+  },
+  {
+   "id": "clu04q84h0003l408oeqczdu9",
+   "title": "The Symbols in my inventory don't get \"used up\" when I they come up on the wheels.",
+   "url": "https://fatebook.io/q/the-symbols-in-my-inventory-don-t-get-used-up-when-i-they-co--clu04q84h0003l408oeqczdu9",
+   "createdAt": "2024-03-20T18:20:58.108Z",
+   "resolveBy": "2025-03-20T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:43:33.363Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.8,
+     "t": "2024-03-20T18:20:58.108Z"
+    }
+   ]
+  },
+  {
+   "id": "clu04pb3g000fl308mz5rfd3o",
+   "title": "The counter that starts at 15 is how I pay for the symbols that I buy, to be in my inventory.",
+   "url": "https://fatebook.io/q/the-counter-that-starts-at-15-is-how-i-pay-for-the-symbols-t--clu04pb3g000fl308mz5rfd3o",
+   "createdAt": "2024-03-20T18:20:15.340Z",
+   "resolveBy": "2024-03-20T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:44:43.526Z",
+   "resolution": "AMBIGUOUS",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.7,
+     "t": "2024-03-20T18:20:15.340Z"
+    },
+    {
+     "p": 0.2,
+     "t": "2024-03-20T18:23:43.915Z"
+    }
+   ]
+  },
+  {
+   "id": "clu04ldor0005l308j2xnmpj6",
+   "title": "This mouse is free.",
+   "url": "https://fatebook.io/q/this-mouse-is-free--clu04ldor0005l308j2xnmpj6",
+   "createdAt": "2024-03-20T18:17:12.076Z",
+   "resolveBy": "2024-03-20T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:44:54.533Z",
+   "resolution": "AMBIGUOUS",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.3,
+     "t": "2024-03-20T18:17:12.076Z"
+    }
+   ]
+  },
+  {
+   "id": "clu04k09g0003l308ejvjf0uk",
+   "title": "LbaL: I already have the symbols that are listed in my inventory.",
+   "url": "https://fatebook.io/q/lbal-i-already-have-the-symbols-that-are-listed-in-my-invent--clu04k09g0003l308ejvjf0uk",
+   "createdAt": "2024-03-20T18:16:08.007Z",
+   "resolveBy": "2024-03-20T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:43:53.134Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.4,
+     "t": "2024-03-20T18:16:08.007Z"
+    }
+   ]
+  },
+  {
+   "id": "clu04gneh0001l408z75yy6tt",
+   "title": "LbaL: The \"symbols\" that I can buy, are the symbols that come up when you spin the wheels.",
+   "url": "https://fatebook.io/q/lbal-the-symbols-that-i-can-buy-are-the-symbols-that-come-up--clu04gneh0001l408z75yy6tt",
+   "createdAt": "2024-03-20T18:13:31.382Z",
+   "resolveBy": "2024-03-27T07:00:00.000Z",
+   "resolvedAt": "2024-03-20T19:43:59.362Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.52,
+     "t": "2024-03-20T18:13:31.382Z"
+    },
+    {
+     "p": 0.95,
+     "t": "2024-03-20T18:18:27.287Z"
+    }
+   ]
+  },
+  {
+   "id": "clt51xaba008tjv0821bwbxka",
+   "title": "The pause button will pause the audio when otter is taking input from a bluetooth device",
+   "url": "https://fatebook.io/q/the-pause-button-will-pause-the-audio-when-otter-is-taking-i--clt51xaba008tjv0821bwbxka",
+   "createdAt": "2024-02-28T00:21:37.271Z",
+   "resolveBy": "2024-02-27T08:00:00.000Z",
+   "resolvedAt": "2024-02-28T00:31:17.297Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.15,
+     "t": "2024-02-28T00:21:37.271Z"
+    }
+   ]
+  },
+  {
+   "id": "clsk2gnz30004l208ot7u4pa8",
+   "title": "Test prediction",
+   "url": "https://fatebook.io/q/test-prediction--clsk2gnz30004l208ot7u4pa8",
+   "createdAt": "2024-02-13T07:53:31.740Z",
+   "resolveBy": "2024-02-13T08:00:00.000Z",
+   "resolvedAt": "2024-02-14T01:14:12.222Z",
+   "resolution": "AMBIGUOUS",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.5,
+     "t": "2024-02-13T07:53:31.740Z"
+    }
+   ]
+  },
+  {
+   "id": "clsf15nnc0003jv08zoa98oxn",
+   "title": "Doing the dual n-back does improve performance on the dual n-back",
+   "url": "https://fatebook.io/q/doing-the-dual-n-back-does-improve-performance-on-the-dual-n--clsf15nnc0003jv08zoa98oxn",
+   "createdAt": "2024-02-09T19:18:07.606Z",
+   "resolveBy": "2024-02-10T08:00:00.000Z",
+   "resolvedAt": null,
+   "resolution": null,
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.96,
+     "t": "2024-02-09T19:18:07.606Z"
+    }
+   ]
+  },
+  {
+   "id": "clsf124ze0001jv08wa5ffntq",
+   "title": "After reading Gwern\u2019s meta analysis, I, Eli, will think that existing versions of the dual n-back do not increase working memory on non dual n-back tasks by more than \"1%\", with a confidence of at least 70%.",
+   "url": "https://fatebook.io/q/after-reading-gwern-s-meta-analysis-i-eli-will-think-that-ex--clsf124ze0001jv08wa5ffntq",
+   "createdAt": "2024-02-09T19:15:23.449Z",
+   "resolveBy": "2024-02-10T08:00:00.000Z",
+   "resolvedAt": null,
+   "resolution": null,
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.5,
+     "t": "2024-02-09T19:15:23.449Z"
+    }
+   ]
+  },
+  {
+   "id": "clrzdj6qw0011l208trm4m34w",
+   "title": "My un-tried proposal for the first level of BaBa is You will work.",
+   "url": "https://fatebook.io/q/my-un-tried-proposal-for-the-first-level-of-baba-is-you-will--clrzdj6qw0011l208trm4m34w",
+   "createdAt": "2024-01-29T20:20:15.464Z",
+   "resolveBy": "2024-01-30T08:00:00.000Z",
+   "resolvedAt": "2024-01-29T20:21:41.101Z",
+   "resolution": "YES",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.65,
+     "t": "2024-01-29T20:20:15.464Z"
+    }
+   ]
+  },
+  {
+   "id": "clrzcbxqc000wjr08d5wmjzkm",
+   "title": "On March 1, will I (Eli) think that anything good came out of our \"notice your cognitive algorithm\" exercise?",
+   "url": "https://fatebook.io/q/on-march-1-will-i-eli-think-that-anything-good-came-out-of-o--clrzcbxqc000wjr08d5wmjzkm",
+   "createdAt": "2024-01-29T19:46:37.568Z",
+   "resolveBy": "2024-03-01T08:00:00.000Z",
+   "resolvedAt": "2024-03-05T08:05:57.095Z",
+   "resolution": "AMBIGUOUS",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.72,
+     "t": "2024-01-29T19:46:37.568Z"
+    }
+   ]
+  },
+  {
+   "id": "clrgxdtay0001l308s963eusi",
+   "title": "I will end up running a workshop for at least 5 MATS scholars in January or the first half of February.",
+   "url": "https://fatebook.io/q/i-will-end-up-running-a-workshop-for-at-least-5-mats-scholar--clrgxdtay0001l308s963eusi",
+   "createdAt": "2024-01-16T22:28:19.738Z",
+   "resolveBy": "2024-02-15T08:00:00.000Z",
+   "resolvedAt": "2024-02-16T02:07:26.684Z",
+   "resolution": "NO",
+   "type": "BINARY",
+   "forecasts": [
+    {
+     "p": 0.5,
+     "t": "2024-01-16T22:28:19.738Z"
+    },
+    {
+     "p": 0.06,
+     "t": "2024-02-16T02:06:50.511Z"
+    }
+   ]
+  }
+ ]
+}
