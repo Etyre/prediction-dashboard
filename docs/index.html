@@ -74,31 +74,25 @@
   input[type="search"]:focus { outline: none; border-color: var(--accent500); box-shadow: 0 0 0 1px var(--accent500); }
   input[type="search"]::placeholder { color: var(--n400); }
 
-  .list { display: grid; gap: 24px; list-style: none; margin: 0; padding: 0; }
-  .card { background: var(--white); outline: 1px solid var(--n200); border-radius: 10px; box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    padding: 16px; display: grid; gap: 12px; transition: transform .15s, box-shadow .15s; }
-  .card:hover { transform: scale(1.01); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1); }
-  .card.resolved { border-left: 4px solid var(--edge); padding-left: 12px; }
+  /* Cards are read-only records, so nothing on them looks like a control:
+     no input-style box round the forecast, no button-shaped resolution, no
+     hover lift. The title link is the only thing on a card that does anything. */
+  .list { display: grid; gap: 12px; list-style: none; margin: 0; padding: 0; }
+  .card { background: var(--white); border: 1px solid var(--n200); border-radius: 10px; padding: 16px;
+    display: grid; grid-template-columns: 64px 1fr; gap: 16px; }
+  .card.resolved { border-left: 4px solid var(--edge); padding-left: 13px; }
   .card.yes { --edge: var(--green); } .card.no { --edge: var(--red); } .card.amb { --edge: var(--blue); }
-  .top { display: flex; gap: 16px; justify-content: space-between; align-items: flex-start; }
+  .pct { font-size: 26px; line-height: 1.15; font-weight: 700; color: var(--heading); text-align: right; font-variant-numeric: tabular-nums; }
+  .pct small { display: block; margin-top: 2px; font-size: 11px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; color: var(--n500); }
+  .body { min-width: 0; display: grid; gap: 8px; }
   .title { font-weight: 600; color: var(--heading); text-decoration: none; overflow-wrap: anywhere; }
   .title:hover { text-decoration: underline; }
-  .pct { position: relative; flex: none; font-size: 20px; line-height: 1.4; font-weight: 700; padding: 2px 8px; border-radius: 6px;
-    min-width: 76px; text-align: right; color: var(--n600); overflow: hidden; }
-  .pct.open { color: var(--accent800); box-shadow: inset 0 0 0 2px var(--n300); }
-  .pct .fill { position: absolute; inset: 0 auto 0 0; background: var(--accent600); opacity: .2; }
-  .pct span { position: relative; }
-  .bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; align-items: center; font-size: 14px; }
-  .when { color: var(--n400); text-align: center; text-wrap: balance; }
-  .when.ready { color: var(--accent300); }
-  .when b { font-weight: 600; }
-  .pill { justify-self: end; width: 100%; max-width: 160px; text-align: center; border-radius: 999px; padding: 5px 16px;
-    font-weight: 600; }
-  .yes .pill { background: #dcfce7; color: #166534; } .no .pill { background: #fee2e2; color: #991b1b; } .amb .pill { background: #dbeafe; color: #1e40af; }
-  .history { font-size: 14px; color: var(--n400); }
+  .meta { display: flex; flex-wrap: wrap; gap: 2px 14px; align-items: baseline; font-size: 14px; color: var(--n500); }
+  .status { font-weight: 600; color: var(--n600); }
+  .yes .status { color: #166534; } .no .status { color: #991b1b; } .amb .status { color: #1e40af; }
+  .history { font-size: 13px; color: var(--n500); }
   .empty { font-style: italic; color: var(--n500); font-size: 14px; text-align: center; margin-top: 16px; }
   footer { color: var(--n400); font-size: 14px; margin-top: 48px; text-align: center; }
-  @media (max-width: 480px) { .bottom { grid-template-columns: 1fr 1fr; } .who { display: none; } .when { text-align: left; } }
 </style>
 </head>
 <body>
@@ -209,31 +203,27 @@ function drawChart(rawBins) {
   }
 }
 
-const STATUS = { YES: ["yes", "Yes"], NO: ["no", "No"], AMBIGUOUS: ["amb", "Ambiguous"] };
+const STATUS = { YES: ["yes", "✓ Resolved yes"], NO: ["no", "✕ Resolved no"], AMBIGUOUS: ["amb", "? Resolved ambiguous"] };
 
 function row(q) {
   const st = STATUS[q.resolution];
   const li = el("li", "card" + (st ? " resolved " + st[0] : ""));
   const last = q.forecasts[q.forecasts.length - 1];
 
-  const top = el("div", "top");
+  const p = el("div", "pct", pct(last.p));
+  p.append(el("small", "", q.forecasts.length > 1 ? "latest" : "forecast"));
+
+  const body = el("div", "body");
   const a = el("a", "title", q.title); a.href = q.url; a.rel = "noopener";
-  const p = el("div", "pct" + (st ? "" : " open")); p.title = "My latest forecast";
-  if (!st) { const fill = el("div", "fill"); fill.style.width = Math.round(last.p * 100) + "%"; p.append(fill); }
-  p.append(el("span", "", pct(last.p)));
-  top.append(a, p);
-
-  const bottom = el("div", "bottom");
-  bottom.append(el("span", "who", "Eli Tyre"));
   const due = !st && new Date(q.resolveBy) < new Date();
-  const when = el("span", "when" + (due ? " ready" : ""));
-  when.append(due ? el("b", "", "Ready to resolve") : (st ? "Resolved" : "Resolves"), el("br"), day(st ? (q.resolvedAt || q.resolveBy) : q.resolveBy));
-  bottom.append(when);
-  if (st) bottom.append(el("span", "pill", st[1]));
+  const meta = el("div", "meta");
+  meta.append(el("span", "status", st ? st[1] : due ? "Awaiting resolution" : "Open"),
+    el("span", "", st ? day(q.resolvedAt || q.resolveBy) : (due ? "was due " : "resolves ") + day(q.resolveBy)));
+  body.append(a, meta);
+  if (q.forecasts.length > 1) body.append(el("div", "history", "Forecast history: " + q.forecasts.map(f => pct(f.p)).join(" → ")));
+  if (q.tags.length) { const t = el("div", "cardtags"); q.tags.forEach(n => t.append(el("span", "", n))); body.append(t); }
 
-  li.append(top, bottom);
-  if (q.tags.length) { const t = el("div", "cardtags"); q.tags.forEach(n => t.append(el("span", "", n))); li.append(t); }
-  if (q.forecasts.length > 1) li.append(el("div", "history", "My forecasts: " + q.forecasts.map(f => pct(f.p)).join(" → ")));
+  li.append(p, body);
   return li;
 }
 
