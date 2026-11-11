@@ -19,10 +19,11 @@ def log(msg):
         print(f"{datetime.now():%Y-%m-%d %H:%M:%S} {line}", flush=True)
 
 
-def run(*cmd):
+def run(*cmd, quiet=False):
     r = subprocess.run(cmd, cwd=HERE, capture_output=True, text=True)
     out = (r.stdout + r.stderr).strip()
-    if out:
+    # quiet: the output is an answer for this script, not news for the log.
+    if out and not (quiet and r.returncode == 0):
         log(out)
     if r.returncode:
         log(f"FAILED ({r.returncode}): {' '.join(cmd)}")
@@ -32,11 +33,11 @@ def run(*cmd):
 
 def main():
     run(sys.executable, "build.py")
-    if run("git", "status", "--porcelain", "docs/data.json").strip():
+    if run("git", "status", "--porcelain", "docs/data.json", quiet=True).strip():
         run("git", "add", "docs/data.json")
         run("git", "commit", "-q", "-m", "Update predictions from Fatebook", "--", "docs/data.json")
     # Also covers a commit whose push failed on an earlier run.
-    if run("git", "rev-list", "--count", "@{u}..HEAD").strip() != "0":
+    if run("git", "rev-list", "--count", "@{u}..HEAD", quiet=True).strip() != "0":
         run("git", "push", "-q")
         log("pushed")
 
