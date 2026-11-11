@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T03:22:31.000Z",
+ "updated": "2026-11-11T04:23:21.000Z",
  "calibration": {
   "public": [
    {
@@ -77,16 +77,16 @@
    {
     "lo": 0,
     "hi": 10,
-    "n": 39,
+    "n": 43,
     "yes": 1,
-    "mean": 0.0374
+    "mean": 0.0362
    },
    {
     "lo": 10,
     "hi": 20,
-    "n": 16,
+    "n": 17,
     "yes": 1,
-    "mean": 0.1337
+    "mean": 0.1318
    },
    {
     "lo": 20,
@@ -112,9 +112,9 @@
    {
     "lo": 50,
     "hi": 60,
-    "n": 11,
+    "n": 12,
     "yes": 4,
-    "mean": 0.5182
+    "mean": 0.5167
    },
    {
     "lo": 60,
@@ -126,23 +126,23 @@
    {
     "lo": 70,
     "hi": 80,
-    "n": 16,
+    "n": 17,
     "yes": 12,
-    "mean": 0.7206
+    "mean": 0.7224
    },
    {
     "lo": 80,
     "hi": 90,
-    "n": 13,
-    "yes": 9,
+    "n": 15,
+    "yes": 10,
     "mean": 0.825
    },
    {
     "lo": 90,
     "hi": 100,
-    "n": 24,
-    "yes": 20,
-    "mean": 0.9242
+    "n": 25,
+    "yes": 21,
+    "mean": 0.9264
    }
   ]
  },
@@ -156,6 +156,9 @@
    "resolvedAt": null,
    "resolution": null,
    "type": "BINARY",
+   "tags": [
+    "social perception of AI"
+   ],
    "forecasts": [
     {
      "p": 0.35,
@@ -168,6 +171,10 @@
     {
      "p": 0.7,
      "t": "2026-04-09T03:25:02.140Z"
+    },
+    {
+     "p": 0.9,
+     "t": "2026-11-11T04:19:22.577Z"
     }
    ]
   },
@@ -180,6 +187,9 @@
    "resolvedAt": "2025-07-11T03:21:03.681Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "self_prediction"
+   ],
    "forecasts": [
     {
      "p": 0.9,
@@ -204,6 +214,7 @@
    "resolvedAt": "2024-09-22T00:39:34.804Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.05,
@@ -220,6 +231,7 @@
    "resolvedAt": "2024-09-22T00:39:42.678Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.35,
@@ -236,6 +248,7 @@
    "resolvedAt": "2024-09-12T07:40:44.321Z",
    "resolution": "AMBIGUOUS",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.3,
@@ -252,6 +265,7 @@
    "resolvedAt": null,
    "resolution": null,
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.65,
@@ -268,6 +282,9 @@
    "resolvedAt": "2024-09-05T02:38:33.539Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "fermi_estimiate"
+   ],
    "forecasts": [
     {
      "p": 0.9,
@@ -284,6 +301,9 @@
    "resolvedAt": "2024-09-05T02:38:55.352Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "fermi_estimiate"
+   ],
    "forecasts": [
     {
      "p": 0.9,
@@ -300,6 +320,9 @@
    "resolvedAt": "2024-08-28T04:16:48.952Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "fermi_estimiate"
+   ],
    "forecasts": [
     {
      "p": 0.9,
@@ -316,6 +339,9 @@
    "resolvedAt": "2024-08-28T04:17:21.097Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "fermi_estimiate"
+   ],
    "forecasts": [
     {
      "p": 0.9,
@@ -332,6 +358,9 @@
    "resolvedAt": "2024-08-28T04:13:38.986Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "fermi_estimiate"
+   ],
    "forecasts": [
     {
      "p": 0.9,
@@ -348,6 +377,9 @@
    "resolvedAt": "2024-08-28T04:13:30.122Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "fermi_estimiate"
+   ],
    "forecasts": [
     {
      "p": 0.9,
@@ -364,6 +396,7 @@
    "resolvedAt": "2024-04-27T06:36:26.041Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.95,
@@ -380,6 +413,7 @@
    "resolvedAt": "2024-04-22T06:22:54.107Z",
    "resolution": "AMBIGUOUS",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.9,
@@ -396,6 +430,7 @@
    "resolvedAt": "2024-03-28T00:52:55.331Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.5,
@@ -412,6 +447,7 @@
    "resolvedAt": "2024-03-28T00:54:41.466Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.9,
@@ -428,6 +464,7 @@
    "resolvedAt": "2024-03-24T19:17:31.492Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.2,
@@ -444,6 +481,7 @@
    "resolvedAt": "2026-09-07T22:33:52.599Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.1,
@@ -476,6 +514,9 @@
    "resolvedAt": "2024-03-22T00:26:21.112Z",
    "resolution": "AMBIGUOUS",
    "type": "BINARY",
+   "tags": [
+    "BiY"
+   ],
    "forecasts": [
     {
      "p": 0.1,
@@ -492,6 +533,9 @@
    "resolvedAt": "2024-03-22T05:55:42.184Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "BiY"
+   ],
    "forecasts": [
     {
      "p": 0.07,
@@ -508,6 +552,9 @@
    "resolvedAt": "2024-03-22T00:15:25.832Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "BiY"
+   ],
    "forecasts": [
     {
      "p": 0.6,
@@ -524,6 +571,9 @@
    "resolvedAt": "2024-03-22T00:15:34.902Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "BiY"
+   ],
    "forecasts": [
     {
      "p": 0.72,
@@ -540,6 +590,9 @@
    "resolvedAt": "2024-03-22T00:25:19.987Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "BiY"
+   ],
    "forecasts": [
     {
      "p": 0.03,
@@ -556,6 +609,9 @@
    "resolvedAt": "2024-03-22T00:24:49.140Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "BiY"
+   ],
    "forecasts": [
     {
      "p": 0.4,
@@ -572,6 +628,9 @@
    "resolvedAt": "2024-03-22T00:24:29.786Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "BiY"
+   ],
    "forecasts": [
     {
      "p": 0.04,
@@ -588,6 +647,9 @@
    "resolvedAt": "2024-03-22T00:24:38.185Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "BiY"
+   ],
    "forecasts": [
     {
      "p": 0.2,
@@ -604,6 +666,7 @@
    "resolvedAt": "2024-03-21T18:37:57.722Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.98,
@@ -620,6 +683,9 @@
    "resolvedAt": "2024-07-27T16:44:11.697Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "self_prediction"
+   ],
    "forecasts": [
     {
      "p": 0.2,
@@ -636,6 +702,7 @@
    "resolvedAt": "2024-06-07T19:21:55.561Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.6,
@@ -652,6 +719,9 @@
    "resolvedAt": "2024-04-11T05:48:04.383Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "personalAssessment"
+   ],
    "forecasts": [
     {
      "p": 0.68,
@@ -668,6 +738,9 @@
    "resolvedAt": "2024-06-07T19:24:32.689Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "self_prediction"
+   ],
    "forecasts": [
     {
      "p": 0.8,
@@ -692,6 +765,7 @@
    "resolvedAt": "2024-03-28T00:55:00.366Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.6,
@@ -708,6 +782,7 @@
    "resolvedAt": "2024-03-21T18:11:20.930Z",
    "resolution": "AMBIGUOUS",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.02,
@@ -724,6 +799,9 @@
    "resolvedAt": "2024-03-20T19:42:25.593Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.6,
@@ -740,6 +818,9 @@
    "resolvedAt": "2024-03-20T19:42:36.403Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.2,
@@ -756,6 +837,9 @@
    "resolvedAt": "2024-03-20T19:42:46.264Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.7,
@@ -776,6 +860,9 @@
    "resolvedAt": "2024-03-24T22:16:43.852Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.5,
@@ -796,6 +883,9 @@
    "resolvedAt": "2024-03-20T19:43:06.035Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.7,
@@ -812,6 +902,9 @@
    "resolvedAt": "2024-03-20T19:43:21.592Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.75,
@@ -828,6 +921,9 @@
    "resolvedAt": "2024-03-20T19:43:26.512Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.7,
@@ -844,6 +940,9 @@
    "resolvedAt": "2024-03-20T19:43:33.363Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.8,
@@ -860,6 +959,9 @@
    "resolvedAt": "2024-03-20T19:44:43.526Z",
    "resolution": "AMBIGUOUS",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.7,
@@ -880,6 +982,9 @@
    "resolvedAt": "2024-03-20T19:44:54.533Z",
    "resolution": "AMBIGUOUS",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.3,
@@ -896,6 +1001,9 @@
    "resolvedAt": "2024-03-20T19:43:53.134Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.4,
@@ -912,6 +1020,9 @@
    "resolvedAt": "2024-03-20T19:43:59.362Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [
+    "LbaL"
+   ],
    "forecasts": [
     {
      "p": 0.52,
@@ -932,6 +1043,7 @@
    "resolvedAt": "2024-02-28T00:31:17.297Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.15,
@@ -948,6 +1060,7 @@
    "resolvedAt": "2024-02-14T01:14:12.222Z",
    "resolution": "AMBIGUOUS",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.5,
@@ -964,6 +1077,7 @@
    "resolvedAt": null,
    "resolution": null,
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.96,
@@ -980,6 +1094,7 @@
    "resolvedAt": null,
    "resolution": null,
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.5,
@@ -996,6 +1111,7 @@
    "resolvedAt": "2024-01-29T20:21:41.101Z",
    "resolution": "YES",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.65,
@@ -1012,6 +1128,7 @@
    "resolvedAt": "2024-03-05T08:05:57.095Z",
    "resolution": "AMBIGUOUS",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.72,
@@ -1028,6 +1145,7 @@
    "resolvedAt": "2024-02-16T02:07:26.684Z",
    "resolution": "NO",
    "type": "BINARY",
+   "tags": [],
    "forecasts": [
     {
      "p": 0.5,

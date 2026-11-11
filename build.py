@@ -3,8 +3,8 @@
 
 Downloads every question the Fatebook API key can see, keeps only the ones
 shared publicly that I forecasted on, and writes just the title, dates,
-resolution and my own forecasts. Everything else (private questions, tags,
-comments, other people's forecasts) is dropped here and never reaches docs/.
+resolution, my own tags on it and my own forecasts. Everything else (private
+questions and their tags, comments, other people's forecasts) is dropped here and never reaches docs/.
 The one thing derived from private questions is the "all predictions"
 calibration: ten bucket counts, with no titles or individual forecasts.
 
@@ -81,6 +81,8 @@ def public_view(questions, user_id, include_unlisted, now):
             "resolvedAt": q.get("resolvedAt"),
             "resolution": q.get("resolution") if q.get("resolved") else None,
             "type": q.get("type"),
+            # My own tags only; they are published because the page filters by them.
+            "tags": sorted({t["name"] for t in q.get("tags", []) if t.get("userId") == user_id}),
             "forecasts": mine,
         })
     out.sort(key=lambda q: q["createdAt"], reverse=True)
@@ -129,8 +131,9 @@ def run_test():
     assert {q["id"] for q in both} == {"pub-open", "pub-yes", "unlisted-no"}, [q["id"] for q in both]
     for leak in ("PRIVATE", "SECRET-TAG", "someone-else", "0.99", "HIDDEN", "NOT-MINE"):
         assert leak not in text, f"leaked: {leak}"
+    assert listed[1]["tags"] == ["public-tag"] and listed[0]["tags"] == [], [q["tags"] for q in listed]
     assert [f["p"] for f in listed[1]["forecasts"]] == [0.6, 0.8], listed[1]["forecasts"]
-    assert set(listed[0]) == {"id", "title", "url", "createdAt", "resolveBy", "resolvedAt", "resolution", "type", "forecasts"}
+    assert set(listed[0]) == {"id", "title", "url", "createdAt", "resolveBy", "resolvedAt", "resolution", "type", "tags", "forecasts"}
     cal = calibration([("YES", [{"p": 0.6, "t": "2026-01-01T00:00:00.000Z"}, {"p": 0.65, "t": "2026-01-01T00:00:30.000Z"}, {"p": 1.0, "t": "2026-01-02T00:00:00.000Z"}]),
                        ("NO", [{"p": 0.62, "t": "2026-01-01T00:00:00.000Z"}]), ("AMBIGUOUS", [{"p": 0.1, "t": "2026-01-01T00:00:00.000Z"}])])
     assert [(b["n"], b["yes"]) for b in cal] == [(0, 0)] * 6 + [(2, 1)] + [(0, 0)] * 2 + [(1, 1)], cal

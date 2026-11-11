@@ -5,11 +5,11 @@ A public web page showing my Fatebook calibration chart and a keyword-searchable
 ## How it works
 
 - `build.py` downloads every question my Fatebook API key can see (`/api/v0/getQuestions`, 100 per page) and writes `docs/data.json`.
-- Only questions that are shared publicly **and** listed on fatebook.io/public, that I forecasted on, and whose forecasts are not hidden, go into the list. For each one it keeps the title, dates, resolution and my own forecasts. Tags, comments, notes and other people's forecasts are dropped.
+- Only questions that are shared publicly **and** listed on fatebook.io/public, that I forecasted on, and whose forecasts are not hidden, go into the list. For each one it keeps the title, dates, resolution, my own tags on it and my own forecasts. Comments, notes, other people's forecasts, and tags that only appear on private questions are dropped.
 - The calibration chart has a toggle: **Public predictions** (the listed ones above) or **All predictions** (every binary question I forecasted on that resolved yes or no, private ones included). For "all", only ten bucket counts are published: no titles, no individual forecasts.
 - Calibration uses Fatebook's own method: every forecast counts once (not just the latest), except one replaced within a minute; ten equal-width buckets; ambiguous resolutions are left out.
-- `docs/index.html` is a static page with no script dependencies. It fetches `data.json`, draws the chart as SVG, and filters the list as you type: every word typed must appear in the title.
-- The page is styled after fatebook.io itself (colours and sizes taken from Fatebook's open-source Tailwind classes): white question cards with a green, red or blue corner by resolution, indigo accents, and a calibration chart of dots only against a green perfect-calibration line. Like Fatebook it is light-only. The Inter font loads from Google Fonts, the page's one external request.
+- `docs/index.html` is a static page with no script dependencies. It fetches `data.json`, draws the chart as SVG, and filters the list as you type: every word typed must appear in the title. Below the search box is a row of tag buttons; with one or more picked, only predictions carrying at least one of those tags are shown. Search and tags combine.
+- The page is styled as a cousin of fatebook.io, similar but deliberately not identical: Fatebook's layout (question cards with the forecast top right, a resolution pill, a dots-only calibration chart) with its own teal accent, system font, warm page colour, tinted pills and a coloured left edge on resolved cards. Light-only. No external requests.
 - GitHub Pages serves the `docs/` folder of the `main` branch of the public repo `Etyre/prediction-dashboard`.
 - A launchd agent runs `update.py` at login and every hour. It runs `build.py`, and if `docs/data.json` changed, commits just that file and pushes. The page updates a minute or so after the push.
 
@@ -59,7 +59,7 @@ tail -f ~/Library/Logs/prediction-dashboard.log
 
 - The launchd agent is a run-and-exit job, so it uses `StartInterval` rather than `KeepAlive`; `KeepAlive` would relaunch it every ten seconds.
 - Fatebook question links are `fatebook.io/q/<slug>--<id>` and the id is whatever follows the first `--`. A slug ending in `-` makes `---` and breaks the link, so the slug is trimmed after truncating.
-- `getQuestions` returns forecasts as strings (`"0.35"`) and includes everyone's forecasts and my private tags on each question; the filter in `build.py` is the only thing keeping those off the public page.
+- `getQuestions` returns forecasts as strings (`"0.35"`) and includes everyone's forecasts on each question; the filter in `build.py` is the only thing keeping those off the public page. Tag names on listed questions are published (since 2026-11-10), so a tag put on a public question is itself public.
 - "Shared publicly" on Fatebook defaults to unlisted (link-only). 33 of my 85 shared questions were link-only when this was built.
 - `build.py` refuses to write an empty list: a bad key or an API change would otherwise blank the live page.
 - The calibration dots are not joined by a line: with a handful of forecasts per bucket a connecting line zigzags and reads as a trend that is not there. Fatebook's own chart is dots only too.
