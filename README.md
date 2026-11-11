@@ -8,7 +8,8 @@ A public web page showing my Fatebook calibration chart and a keyword-searchable
 - Only questions that are shared publicly **and** listed on fatebook.io/public, that I forecasted on, and whose forecasts are not hidden, go into the list. For each one it keeps the title, dates, resolution and my own forecasts. Tags, comments, notes and other people's forecasts are dropped.
 - The calibration chart has a toggle: **Public predictions** (the listed ones above) or **All predictions** (every binary question I forecasted on that resolved yes or no, private ones included). For "all", only ten bucket counts are published: no titles, no individual forecasts.
 - Calibration uses Fatebook's own method: every forecast counts once (not just the latest), except one replaced within a minute; ten equal-width buckets; ambiguous resolutions are left out.
-- `docs/index.html` is a static page with no dependencies. It fetches `data.json`, draws the chart as SVG, and filters the list as you type: every word typed must appear in the title.
+- `docs/index.html` is a static page with no script dependencies. It fetches `data.json`, draws the chart as SVG, and filters the list as you type: every word typed must appear in the title.
+- The page is styled after fatebook.io itself (colours and sizes taken from Fatebook's open-source Tailwind classes): white question cards with a green, red or blue corner by resolution, indigo accents, and a calibration chart of dots only against a green perfect-calibration line. Like Fatebook it is light-only. The Inter font loads from Google Fonts, the page's one external request.
 - GitHub Pages serves the `docs/` folder of the `main` branch of the public repo `Etyre/prediction-dashboard`.
 - A launchd agent runs `update.py` at login and every hour. It runs `build.py`, and if `docs/data.json` changed, commits just that file and pushes. The page updates a minute or so after the push.
 
@@ -61,4 +62,5 @@ tail -f ~/Library/Logs/prediction-dashboard.log
 - `getQuestions` returns forecasts as strings (`"0.35"`) and includes everyone's forecasts and my private tags on each question; the filter in `build.py` is the only thing keeping those off the public page.
 - "Shared publicly" on Fatebook defaults to unlisted (link-only). 33 of my 85 shared questions were link-only when this was built.
 - `build.py` refuses to write an empty list: a bad key or an API change would otherwise blank the live page.
+- The calibration dots are not joined by a line: with a handful of forecasts per bucket a connecting line zigzags and reads as a trend that is not there. Fatebook's own chart is dots only too.
 - The chart is drawn at the container's pixel width and redrawn on resize; a fixed-size SVG scaled down made the labels unreadable on a phone.
